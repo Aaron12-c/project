@@ -153,7 +153,7 @@ const Cart = () => {
               Clear Cart
             </button>
 
-            {/* ✅ Updated Link to Checkout Page */}
+            
             <Link
               to="/checkout"
               className="bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition text-center shadow-md"
@@ -168,3 +168,4 @@ const Cart = () => {
 };
 
 export default Cart;
+
