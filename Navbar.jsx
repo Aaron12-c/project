@@ -7,18 +7,18 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white shadow-sm py-3 px-5 flex justify-between items-center rounded-xl mt-3 mx-3 sticky top-0 z-50 transition-all duration-300">
-      {/* === Logo Section === */}
+    
       <div className="flex items-center">
         <Link to="/">
           <img
             src="/Vs_logo.png"
             alt="Website Logo"
-            className="w-28 h-auto object-contain" // ✅ Logo enlarged
+            className="w-28 h-auto object-contain" 
           />
         </Link>
       </div>
 
-      {/* === Desktop Navigation === */}
+    
       <ul className="hidden md:flex space-x-10 text-gray-800 font-semibold text-lg tracking-wide">
         <li>
           <Link
@@ -54,7 +54,7 @@ const Navbar = () => {
         </li>
       </ul>
 
-      {/* === Action Buttons === */}
+  
       <div className="hidden md:flex items-center space-x-5 text-gray-700 font-medium">
         <Link to="/cart" className="hover:text-blue-600 transition">
           <FaShoppingCart size={20} />
@@ -73,7 +73,7 @@ const Navbar = () => {
         </Link>
       </div>
 
-      {/* === Mobile Menu Button === */}
+      
       <div className="md:hidden flex items-center">
         <button
           onClick={() => setMenuOpen(!menuOpen)}
@@ -83,7 +83,7 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* === Mobile Menu Dropdown === */}
+    
       {menuOpen && (
         <div className="absolute top-[70px] left-0 w-full bg-white shadow-md rounded-b-xl flex flex-col items-center space-y-5 py-6 md:hidden">
           <Link
@@ -138,3 +138,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
