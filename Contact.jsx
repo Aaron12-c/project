@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section className="bg-gradient-to-b from-gray-50 to-gray-100 py-20">
       <div className="max-w-7xl mx-auto px-6">
-        {/* === Header === */}
+      
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-4 tracking-tight">
             Get in Touch
@@ -16,9 +16,9 @@ const Contact = () => {
           </p>
         </div>
 
-        {/* === Main Contact Grid === */}
+        
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* === Contact Info Section === */}
+        
           <div className="bg-white p-10 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
             <h2 className="text-2xl font-semibold text-gray-800 mb-8">
               Contact Information
@@ -79,7 +79,7 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* === Contact Form === */}
+          
           <div>
             <form className="bg-white p-10 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 space-y-6">
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">
@@ -132,7 +132,7 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* === Google Map Embed (ABUJA) === */}
+        
         <div className="mt-20 rounded-2xl overflow-hidden shadow-lg">
           <iframe
             title="Company Location Map"
@@ -150,3 +150,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
