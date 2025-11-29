@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Orders = () => {
   const [orders, setOrders] = useState([]);
 
-  // Load dummy orders (you can replace this with backend or localStorage data later)
+  
   useEffect(() => {
     const savedOrders = JSON.parse(localStorage.getItem("orders")) || [];
     setOrders(savedOrders);
@@ -87,3 +87,4 @@ const Orders = () => {
 };
 
 export default Orders;
+
