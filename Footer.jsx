@@ -7,12 +7,12 @@ const Footer = () => {
     <footer className="bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 text-gray-100 py-12 mt-16 shadow-lg">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
         
-        {/* Logo and About */}
+        
         <div>
           <div className="flex items-center justify-start mb-4">
-            {/* ✅ Your logo image goes here */}
+            
             <img
-              src="/V-CLASS PNG..png" // make sure it's in your public folder
+              src="/V-CLASS PNG..png" 
               alt="Logo"
               className="w-24 h-24 object-contain drop-shadow-lg"
             />
@@ -25,7 +25,7 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Quick Links */}
+      
         <div>
           <h3 className="text-lg font-semibold mb-4 text-white">Quick Links</h3>
           <ul className="space-y-2 text-gray-300">
@@ -52,7 +52,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Contact & Socials */}
+        
         <div>
           <h3 className="text-lg font-semibold mb-4 text-white">Connect With Us</h3>
           <p className="text-gray-300 mb-4">
@@ -97,7 +97,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Copyright */}
+      
       <div className="border-t border-gray-600 mt-10 pt-4 text-center text-gray-400 text-sm">
         © {new Date().getFullYear()} All Rights Reserved.
       </div>
@@ -106,3 +106,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
