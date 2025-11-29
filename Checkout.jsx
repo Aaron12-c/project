@@ -3,7 +3,7 @@ import { useCart } from "../context/CartContext";
 import { Link, useNavigate } from "react-router-dom";
 
 const Checkout = () => {
-  const { cart, clearCart } = useCart(); // optional: clear cart after order
+  const { cart, clearCart } = useCart(); 
   const navigate = useNavigate();
 
   // Form state
@@ -18,7 +18,7 @@ const Checkout = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Calculate total price
+
   const getTotal = () => {
     return cart.reduce((sum, item) => {
       const numericPrice = parseInt(item.price.replace(/[^\d]/g, "")) || 0;
@@ -29,19 +29,18 @@ const Checkout = () => {
   const handlePayment = (e) => {
     e.preventDefault();
 
-    // ✅ Validate inputs
     if (!formData.fullName || !formData.email || !formData.phone || !formData.address) {
       alert("Please fill all fields before proceeding!");
       return;
     }
 
-    // ⚙️ In production, integrate Flutterwave or real payment gateway here
-    alert("✅ Order placed successfully! Redirecting to Orders page...");
+    
+    alert(" Order placed successfully! Redirecting to Orders page...");
 
-    // ✅ Optional: clear cart after successful checkout
+    
     if (clearCart) clearCart();
 
-    // ✅ Redirect to Orders page
+
     navigate("/orders");
   };
 
@@ -216,3 +215,4 @@ const Checkout = () => {
 };
 
 export default Checkout;
+
