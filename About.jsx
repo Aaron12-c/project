@@ -1,6 +1,6 @@
 import React from "react";
 import heroImage from "../assets/hero 2.jpeg";
-import aboutImage from "../assets/hero4.png"; // ✅ Better path consistency
+import aboutImage from "../assets/hero4.png"; 
 
 const About = () => {
   return (
@@ -104,3 +104,4 @@ const About = () => {
 };
 
 export default About;
+
